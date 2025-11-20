@@ -1,4 +1,4 @@
-FLASKAPP
+Damn Vulnerable Web Application
 =========
 This is a vulnerable app written for training purposes. This app contains traning for:
 1. SQL Injection
