@@ -20,3 +20,16 @@ STEPS TO RUN THE APP
 6. Deactivate the virtual env once you close the app using this command
           <code>deactivate</code>
       
+Mitigation
+=====================
+
+SQL Injection
+--------------
+
+
+IDOR
+---------
+To mitigate IDOR, implement access control checks for each object that users try to access. Web frameworks often provide ways to facilitate this. Additionally, use complex identifiers as a defense-in-depth measure, but remember that access control is crucial even with these identifiers.
+
+Avoid exposing identifiers in URLs and POST bodies if possible. Instead, determine the currently authenticated user from session information. When using multi-step flows, pass identifiers in the session to prevent tampering.
+
